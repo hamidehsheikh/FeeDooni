@@ -13,17 +13,18 @@ struct ListItemView: View {
     
     var body: some View {
         HStack (spacing: 10) {
-            Image(systemName: coin.Image)
+            //Image(name: ImageSpecifier(coin.name))
+            Image(ImageSpecifier(coin.name))
                 .resizable()
                 .scaledToFit()
-                .frame(width: 40, height: 40)
+                .frame(width: 30, height: 30)
                 .foregroundColor(.blue)
             
             VStack (alignment: .leading, spacing: 3) {
-                Text(coin.id)
+                Text(coin.name)
                     .font(.title3)
                     .foregroundColor(.black)
-                Text("Increased")
+                Text(coin.type.rawValue)
                     .font(.caption)
                     .foregroundColor(.gray)
             }
@@ -32,12 +33,12 @@ struct ListItemView: View {
             VStack (spacing: 5) {
                 HStack {
                     Image(systemName: "chevron.down")
-                    Text(coin.SellPrice.asCurrencyWith2Decimals())
+                    Text(coin.sell ?? "")
                 }
                 .foregroundColor(.red)
                 HStack {
                     Image(systemName: "chevron.up")
-                    Text(coin.BuyPrice.asCurrencyWith2Decimals())
+                    Text(coin.buy ?? "")
                 }
                 .foregroundColor(.green)
             }
@@ -49,6 +50,23 @@ struct ListItemView: View {
         .shadow(color: .gray.opacity(0.2), radius: 10)
         .listRowSeparator(.hidden)
         .padding(3)
+    }
+}
+
+func ImageSpecifier(_ CurrencyName: String) -> String {
+    switch CurrencyName {
+    case "Emami","Azadi","Azadi-nim", "Azadi-rob":
+        return "goldCoin"
+    case "Gold-Gram", "Gold-Mithghal", "Gold-Ounce":
+        return "goldgram"
+    case "Euro":
+        return "euro"
+    case "USD":
+        return "dollar"
+    case "Bitcoin":
+        return "bitcoin"
+    default:
+        return "dollar"
     }
 }
 

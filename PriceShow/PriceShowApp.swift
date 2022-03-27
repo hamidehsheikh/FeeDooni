@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct PriceShowApp: App {
-    @StateObject var vm = MainViewModel()
+    @StateObject private var vm = MainViewModel()
+    @StateObject var TopTab = TopTabViewModel()
     
     var body: some Scene {
         WindowGroup {
             MainView()
                 .environmentObject(vm)
+                .environmentObject(TopTab)
         }
     }
 }

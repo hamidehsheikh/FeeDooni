@@ -6,19 +6,24 @@
 //
 
 import Foundation
-import SwiftUI
+import Combine
 
 class MainViewModel: ObservableObject {
     
     @Published var Currencies: [UnitData] = []
-    @Published var Coins: [UnitData] = []
-    @Published var Cryptos: [UnitData] = []
+    private var dataService = CurrencyDataService()
+    private var cancallables = Set<AnyCancellable>()
     
     init() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.Currencies.append(DeveloperPreview.instance.SampleData)
-            self.Coins.append(DeveloperPreview.instance.SampleData)
-            self.Cryptos.append(DeveloperPreview.instance.SampleData)
-        }
+        addSubscribers()
+    }
+    
+    func addSubscribers() {
+        dataService.$allCurrencies
+            .sink { [weak self] (returenedCurrencies) in
+                self?.Currencies = returenedCurrencies
+            }
+            .store(in: &cancallables)
+        print("allcurrencies: \(dataService.$allCurrencies)")
     }
 }

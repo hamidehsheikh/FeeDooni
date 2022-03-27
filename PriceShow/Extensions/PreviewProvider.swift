@@ -21,11 +21,14 @@ class DeveloperPreview {
     }
     
     let MainVM = MainViewModel()
+    let MainTopTab = TopTabViewModel()
     
     let SampleData = UnitData(
-        id: "Bitcoin",
-        Symbol: "BTC",
-        Image: "bitcoinsign.square",
-        SellPrice: 26420,
-        BuyPrice: 26320)
+        id: 566474,
+        sell: "20344",
+        buy: "23454",
+        name: "BTC",
+        type: TypeEnum(rawValue: "gold")!
+    )
+
 }
