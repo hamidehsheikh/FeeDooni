@@ -34,7 +34,11 @@ struct HomeView: View {
             }
             .listStyle(.plain)
        }
+        .refreshable {
+            vm.ReloadData()
+        }
     }
+
 }
 
 struct HomeView_Previews: PreviewProvider {

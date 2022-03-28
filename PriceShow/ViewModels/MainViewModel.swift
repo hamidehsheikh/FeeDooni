@@ -13,6 +13,7 @@ class MainViewModel: ObservableObject {
     @Published var Currencies: [UnitData] = []
     private var dataService = CurrencyDataService()
     private var cancallables = Set<AnyCancellable>()
+    private var isLoading: Bool = false
     
     init() {
         addSubscribers()
@@ -22,8 +23,14 @@ class MainViewModel: ObservableObject {
         dataService.$allCurrencies
             .sink { [weak self] (returenedCurrencies) in
                 self?.Currencies = returenedCurrencies
+                self?.isLoading = false
             }
             .store(in: &cancallables)
-        print("allcurrencies: \(dataService.$allCurrencies)")
     }
+    
+    func ReloadData() {
+        isLoading = true
+        dataService.getCurrencies()
+    }
+    
 }

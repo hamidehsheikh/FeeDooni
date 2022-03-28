@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8833FD0527F10FE8007FE501 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833FD0427F10FE8007FE501 /* NetworkingManager.swift */; };
 		889B4A9827DD636C006015CD /* PriceShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9727DD636C006015CD /* PriceShowApp.swift */; };
 		889B4A9A27DD636C006015CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9927DD636C006015CD /* MainView.swift */; };
 		889B4A9C27DD636C006015CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889B4A9B27DD636C006015CD /* Assets.xcassets */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8833FD0227F1053D007FE501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8833FD0427F10FE8007FE501 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		889B4A9427DD636C006015CD /* PriceShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889B4A9727DD636C006015CD /* PriceShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceShowApp.swift; sourceTree = "<group>"; };
 		889B4A9927DD636C006015CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8833FD0327F10F93007FE501 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8833FD0427F10FE8007FE501 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		889B4A8B27DD636B006015CD = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +84,11 @@
 		889B4A9627DD636C006015CD /* PriceShow */ = {
 			isa = PBXGroup;
 			children = (
+				8833FD0227F1053D007FE501 /* Info.plist */,
 				889B4A9727DD636C006015CD /* PriceShowApp.swift */,
-				88DE33A127E2F85300EE8D90 /* Extensions */,
 				88D1696727DED00200E25BCF /* Services */,
+				8833FD0327F10F93007FE501 /* Utilities */,
+				88DE33A127E2F85300EE8D90 /* Extensions */,
 				889B4AA527DD638E006015CD /* Views */,
 				889B4AA727DD639A006015CD /* ViewModels */,
 				889B4AA627DD6393006015CD /* Models */,
@@ -263,6 +276,7 @@
 				889B4AB427DD6D48006015CD /* HomeView.swift in Sources */,
 				889B4AB027DD6C39006015CD /* BookmarksView.swift in Sources */,
 				889B4A9827DD636C006015CD /* PriceShowApp.swift in Sources */,
+				8833FD0527F10FE8007FE501 /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +410,7 @@
 				DEVELOPMENT_TEAM = 7RFWS86NQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceShow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -425,6 +440,7 @@
 				DEVELOPMENT_TEAM = 7RFWS86NQG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PriceShow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

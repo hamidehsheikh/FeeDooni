@@ -22,21 +22,6 @@ enum TypeEnum: String, Codable {
     case gold = "gold"
 }
 
-//struct UnitData: Identifiable, Codable {
-//
-//    let id, Symbol: String
-//    let SellPrice, BuyPrice : Double
-//
-//    enum CodingKeys: String, CodingKey {
-//        case id = "slug"
-//        case Symbol = "title"
-//        case SellPrice = "sell"
-//        case BuyPrice = "buy"
-//    }
-//}
-
-
-
 //struct History: Codable {
 //    let date, sellMinPrice, sellMaxPrice, buyMinPrice: String?
 //    let buyMaxPrice: String?
@@ -49,7 +34,5 @@ enum TypeEnum: String, Codable {
 //        case buyMaxPrice = "buy_max_price"
 //    }
 //}
-
-
 
 //typealias Unit = [UnitData]
