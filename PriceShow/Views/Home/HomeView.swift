@@ -11,6 +11,8 @@ struct HomeView: View {
     
     @EnvironmentObject private var vm: MainViewModel
     @State var SelectedTab = "currency"
+    @State private var showToast: Bool = false
+    
 
     var body: some View {
         VStack {
@@ -21,11 +23,11 @@ struct HomeView: View {
                         ListItemView(coin: item)
                             .swipeActions {
                                 Button {
-                                    print("\(item.name) Added to bookmark!")
                                     SaveUserDefaultsArray(with: item.name)
-                                    print("userDefaults: \(UserDefaults.standard.array(forKey: "myBM") as! [String])")
+                                    self.showToast = true
                                 } label: {
                                     Label("Bookmark", systemImage: "bookmark")
+                                        .offset(y: showToast ? 0 : -700)
                                 }
                                 .tint(.accentColor)
                             }
@@ -37,6 +39,9 @@ struct HomeView: View {
         .refreshable {
             vm.ReloadData()
         }
+        .toast(message: "Bookmark added successfully",
+               isShowing: $showToast,
+               duration: Toast.short)
     }
 
 }

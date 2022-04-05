@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8833FD0527F10FE8007FE501 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833FD0427F10FE8007FE501 /* NetworkingManager.swift */; };
+		8885E65227F269A500FA70DA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885E65127F269A500FA70DA /* Toast.swift */; };
 		889B4A9827DD636C006015CD /* PriceShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9727DD636C006015CD /* PriceShowApp.swift */; };
 		889B4A9A27DD636C006015CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9927DD636C006015CD /* MainView.swift */; };
 		889B4A9C27DD636C006015CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889B4A9B27DD636C006015CD /* Assets.xcassets */; };
 		889B4A9F27DD636C006015CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889B4A9E27DD636C006015CD /* Preview Assets.xcassets */; };
 		889B4AAA27DD6BD8006015CD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4AA927DD6BD8006015CD /* MainViewModel.swift */; };
-		889B4AAE27DD6C1F006015CD /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4AAD27DD6C1F006015CD /* BookmarksViewModel.swift */; };
 		889B4AB027DD6C39006015CD /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4AAF27DD6C39006015CD /* BookmarksView.swift */; };
 		889B4AB427DD6D48006015CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4AB327DD6D48006015CD /* HomeView.swift */; };
 		889B4AB727DD6FBA006015CD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4AB627DD6FBA006015CD /* SettingsView.swift */; };
@@ -28,13 +28,13 @@
 /* Begin PBXFileReference section */
 		8833FD0227F1053D007FE501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8833FD0427F10FE8007FE501 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		8885E65127F269A500FA70DA /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		889B4A9427DD636C006015CD /* PriceShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		889B4A9727DD636C006015CD /* PriceShowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceShowApp.swift; sourceTree = "<group>"; };
 		889B4A9927DD636C006015CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		889B4A9B27DD636C006015CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		889B4A9E27DD636C006015CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		889B4AA927DD6BD8006015CD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		889B4AAD27DD6C1F006015CD /* BookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModel.swift; sourceTree = "<group>"; };
 		889B4AAF27DD6C39006015CD /* BookmarksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
 		889B4AB327DD6D48006015CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		889B4AB627DD6FBA006015CD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -60,6 +60,7 @@
 		8833FD0327F10F93007FE501 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8885E65127F269A500FA70DA /* Toast.swift */,
 				8833FD0427F10FE8007FE501 /* NetworkingManager.swift */,
 			);
 			path = Utilities;
@@ -130,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				889B4AA927DD6BD8006015CD /* MainViewModel.swift */,
-				889B4AAD27DD6C1F006015CD /* BookmarksViewModel.swift */,
 				88F13B9F27E55ADD0045A3B5 /* TopTabViewModel.swift */,
 			);
 			path = ViewModels;
@@ -268,11 +268,11 @@
 				88F13BA027E55ADD0045A3B5 /* TopTabViewModel.swift in Sources */,
 				88DE33A327E2F88100EE8D90 /* PreviewProvider.swift in Sources */,
 				889B4AB727DD6FBA006015CD /* SettingsView.swift in Sources */,
-				889B4AAE27DD6C1F006015CD /* BookmarksViewModel.swift in Sources */,
 				889B4AAA27DD6BD8006015CD /* MainViewModel.swift in Sources */,
 				889B4ACB27DD9A49006015CD /* ListItemView.swift in Sources */,
 				88CEF3F827E5ECA300BB9143 /* CurrencyDataService.swift in Sources */,
 				889B4A9A27DD636C006015CD /* MainView.swift in Sources */,
+				8885E65227F269A500FA70DA /* Toast.swift in Sources */,
 				889B4AB427DD6D48006015CD /* HomeView.swift in Sources */,
 				889B4AB027DD6C39006015CD /* BookmarksView.swift in Sources */,
 				889B4A9827DD636C006015CD /* PriceShowApp.swift in Sources */,
@@ -411,9 +411,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PriceShow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeeDooni;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,9 +443,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PriceShow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeeDooni;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

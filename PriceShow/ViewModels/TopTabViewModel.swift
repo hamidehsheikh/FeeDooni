@@ -10,10 +10,8 @@ import Foundation
 class TopTabViewModel: ObservableObject {
     
     @Published var selectedTab: Int = 0
-    
-    init() {
-        //DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-            //self?.selectedTab = 2
-        //}
-    }
+//    
+//    init() {
+//
+//    }
 }

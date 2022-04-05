@@ -23,24 +23,30 @@ struct ListItemView: View {
             VStack (alignment: .leading, spacing: 3) {
                 Text(coin.name)
                     .font(.title3)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("TextColor"))
                 Text(coin.type.rawValue)
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("TextLightGray"))
             }
             Spacer()
             
-            VStack (spacing: 5) {
+            VStack (alignment: .leading, spacing: 5) {
                 HStack {
                     Image(systemName: "chevron.down")
+                    if (coin.sell == "") || (coin.sell == nil) {
+                        Text("N/A")
+                    }
                     Text(coin.sell ?? "")
                 }
-                .foregroundColor(.red)
+                .foregroundColor(Color("TextRedColor"))
                 HStack {
                     Image(systemName: "chevron.up")
+                    if (coin.buy == "") || (coin.buy == nil) {
+                        Text("N/A")
+                    }
                     Text(coin.buy ?? "")
                 }
-                .foregroundColor(.green)
+                .foregroundColor(Color("TextGreenColor"))
             }
             .font(.subheadline)
         }
