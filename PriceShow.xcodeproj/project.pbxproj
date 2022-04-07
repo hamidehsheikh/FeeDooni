@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8816CCB327FCC74600A9DE85 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8816CCB227FCC74600A9DE85 /* WidgetKit.framework */; };
+		8816CCB527FCC74600A9DE85 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8816CCB427FCC74600A9DE85 /* SwiftUI.framework */; };
+		8816CCBA27FCC74700A9DE85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8816CCB927FCC74700A9DE85 /* Assets.xcassets */; };
+		8816CCBE27FCC74700A9DE85 /* FeeNowExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8816CCB027FCC74600A9DE85 /* FeeNowExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8833FD0527F10FE8007FE501 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833FD0427F10FE8007FE501 /* NetworkingManager.swift */; };
+		8850584727FE55960044D37B /* FeeNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816CCB727FCC74600A9DE85 /* FeeNow.swift */; };
 		8885E65227F269A500FA70DA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8885E65127F269A500FA70DA /* Toast.swift */; };
 		889B4A9827DD636C006015CD /* PriceShowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9727DD636C006015CD /* PriceShowApp.swift */; };
 		889B4A9A27DD636C006015CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B4A9927DD636C006015CD /* MainView.swift */; };
@@ -25,7 +30,37 @@
 		88F13BA027E55ADD0045A3B5 /* TopTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F13B9F27E55ADD0045A3B5 /* TopTabViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8816CCBC27FCC74700A9DE85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889B4A8C27DD636B006015CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8816CCAF27FCC74600A9DE85;
+			remoteInfo = FeeNowExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8816CCBF27FCC74700A9DE85 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8816CCBE27FCC74700A9DE85 /* FeeNowExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8816CCB027FCC74600A9DE85 /* FeeNowExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FeeNowExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8816CCB227FCC74600A9DE85 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8816CCB427FCC74600A9DE85 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8816CCB727FCC74600A9DE85 /* FeeNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeNow.swift; sourceTree = "<group>"; };
+		8816CCB927FCC74700A9DE85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8816CCBB27FCC74700A9DE85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8833FD0227F1053D007FE501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8833FD0427F10FE8007FE501 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		8885E65127F269A500FA70DA /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
@@ -44,9 +79,19 @@
 		88DE33A227E2F88100EE8D90 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		88DE33A427E2FF4300EE8D90 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		88F13B9F27E55ADD0045A3B5 /* TopTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabViewModel.swift; sourceTree = "<group>"; };
+		88F343DF27FE50E20067143D /* PriceShow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PriceShow.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8816CCAD27FCC74600A9DE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8816CCB527FCC74600A9DE85 /* SwiftUI.framework in Frameworks */,
+				8816CCB327FCC74600A9DE85 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		889B4A9127DD636C006015CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8816CCB127FCC74600A9DE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8816CCB227FCC74600A9DE85 /* WidgetKit.framework */,
+				8816CCB427FCC74600A9DE85 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8816CCB627FCC74600A9DE85 /* FeeNow */ = {
+			isa = PBXGroup;
+			children = (
+				8816CCB727FCC74600A9DE85 /* FeeNow.swift */,
+				8816CCB927FCC74700A9DE85 /* Assets.xcassets */,
+				8816CCBB27FCC74700A9DE85 /* Info.plist */,
+			);
+			path = FeeNow;
+			sourceTree = "<group>";
+		};
 		8833FD0327F10F93007FE501 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				889B4A9627DD636C006015CD /* PriceShow */,
+				8816CCB627FCC74600A9DE85 /* FeeNow */,
+				8816CCB127FCC74600A9DE85 /* Frameworks */,
 				889B4A9527DD636C006015CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				889B4A9427DD636C006015CD /* PriceShow.app */,
+				8816CCB027FCC74600A9DE85 /* FeeNowExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +152,7 @@
 		889B4A9627DD636C006015CD /* PriceShow */ = {
 			isa = PBXGroup;
 			children = (
+				88F343DF27FE50E20067143D /* PriceShow.entitlements */,
 				8833FD0227F1053D007FE501 /* Info.plist */,
 				889B4A9727DD636C006015CD /* PriceShowApp.swift */,
 				88D1696727DED00200E25BCF /* Services */,
@@ -196,6 +264,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8816CCAF27FCC74600A9DE85 /* FeeNowExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8816CCC227FCC74700A9DE85 /* Build configuration list for PBXNativeTarget "FeeNowExtension" */;
+			buildPhases = (
+				8816CCAC27FCC74600A9DE85 /* Sources */,
+				8816CCAD27FCC74600A9DE85 /* Frameworks */,
+				8816CCAE27FCC74600A9DE85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeeNowExtension;
+			productName = FeeNowExtension;
+			productReference = 8816CCB027FCC74600A9DE85 /* FeeNowExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		889B4A9327DD636C006015CD /* PriceShow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 889B4AA227DD636C006015CD /* Build configuration list for PBXNativeTarget "PriceShow" */;
@@ -203,10 +288,12 @@
 				889B4A9027DD636C006015CD /* Sources */,
 				889B4A9127DD636C006015CD /* Frameworks */,
 				889B4A9227DD636C006015CD /* Resources */,
+				8816CCBF27FCC74700A9DE85 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8816CCBD27FCC74700A9DE85 /* PBXTargetDependency */,
 			);
 			name = PriceShow;
 			productName = PriceShow;
@@ -223,6 +310,9 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					8816CCAF27FCC74600A9DE85 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					889B4A9327DD636C006015CD = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -242,11 +332,20 @@
 			projectRoot = "";
 			targets = (
 				889B4A9327DD636C006015CD /* PriceShow */,
+				8816CCAF27FCC74600A9DE85 /* FeeNowExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8816CCAE27FCC74600A9DE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8816CCBA27FCC74700A9DE85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		889B4A9227DD636C006015CD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +358,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8816CCAC27FCC74600A9DE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8850584727FE55960044D37B /* FeeNow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		889B4A9027DD636C006015CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,7 +389,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8816CCBD27FCC74700A9DE85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8816CCAF27FCC74600A9DE85 /* FeeNowExtension */;
+			targetProxy = 8816CCBC27FCC74700A9DE85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8816CCC027FCC74700A9DE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RFWS86NQG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeeNow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeeNow;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamrev.PriceShow.FeeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8816CCC127FCC74700A9DE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RFWS86NQG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FeeNow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FeeNow;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamrev.PriceShow.FeeNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		889B4AA027DD636C006015CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,8 +571,10 @@
 		889B4AA327DD636C006015CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PriceShow/PriceShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PriceShow/Preview Content\"";
@@ -434,8 +605,10 @@
 		889B4AA427DD636C006015CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PriceShow/PriceShow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PriceShow/Preview Content\"";
@@ -466,6 +639,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8816CCC227FCC74700A9DE85 /* Build configuration list for PBXNativeTarget "FeeNowExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8816CCC027FCC74700A9DE85 /* Debug */,
+				8816CCC127FCC74700A9DE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		889B4A8F27DD636B006015CD /* Build configuration list for PBXProject "PriceShow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
